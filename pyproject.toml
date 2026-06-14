@@ -1,0 +1,17 @@
+[project]
+name = "apigee-migrator"
+version = "0.1.0"
+description = "Tool for migrating away from Apigee to open API gateways"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+apigee-migrator = "migrator:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
